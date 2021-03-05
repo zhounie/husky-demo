@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "prepare": "husky install",
-    "precommit": "npm test"
+    "fix": "prettier --write"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -25,7 +25,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm run fix"
     }
   },
   "eslintConfig": {
